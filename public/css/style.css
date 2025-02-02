@@ -4,7 +4,7 @@
 }
 .fa-leaf{
     color: green;
-    fond-size:1rem;
+    font-size:1rem;
 }
 
 .nav-link{
@@ -100,3 +100,98 @@
     font-weight: bold;
     font-size: 1.5rem;
 }
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #F5F5DC;
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: #AC8B64;
+    padding: 20px;
+    text-align: center; 
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.5s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.stories-container {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.story-card {
+    background: rgb(242, 255, 230);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-left: 5px solid #4CAF50;
+}
+
+.story-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.story-card h3 {
+    margin: 0 0 10px;
+    color: #2E8B57;
+}
+
+.story-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.person-image{
+    height: 290px;
+}
+
+.qrcode-1{
+    margin-left: 330px;
+}
+
+.qrcode-2{
+    margin-left: 330px;
+}
+
+.footer {
+    background: linear-gradient(90deg, #2E8B57, #4CAF50);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.2rem;
+}
+

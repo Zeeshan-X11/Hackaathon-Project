@@ -37,9 +37,24 @@ const express = require("express");
    res.send("hi i am root");
     });
 
+  //app.use(session(sessionOptions));
+  //app.use(flash());
+
+  /*app.use(passport.initialize());
+  app.use(passport.session());
+  passport.use(new LocalStrategy(User.authenticate()));
+
+  passport.serializeUser(User.serializeUser());
+  passport.deserializeUser(User.deserializeUser());*/
+
+
+
+
+  //app.use("/",userRouter);
   
 
-  
+ 
+
 
 
 //index.js
@@ -92,6 +107,11 @@ app.get("/listings/:id/edit", async(req,res)=>{
         console.log(deletedListing);
         res.redirect("/listings");
     });
+   
+
+   
+
     app.listen(8080,() => {
         console.log("server is listening to port 8080");
     });
+    
